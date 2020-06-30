@@ -25,49 +25,30 @@
 
 ### What's the problem?
 
-Anyone that uses social media will have come into contact with misinformation or fake news. While some people are able to recognise it as fake news, many can not and will heed the advice or worse, help spread it like wild fire.
-
-In the recent COVID-19 pandemic, misinformation and fake news have led to fatal outcomes on numerous occasions. 
-
-While social media companies like Facebook and Twitter have made recent efforts to remove or flag misinformation on their sites, they are struggling to keep up with the ever increasing workload.
-
-In 2019, fact checking companies such as snopes.com quit working with Facebook, due to an unmanageable workload [7]. In March and April 2020, Facebook placed warning labels on 90 million pieces of content related to COVID-19 alone [1].
-
-In order to cope, fact checking responsibilities are being farmed out to third party companies, who mostly employ temporary workers on precarious contracts. As a result removal of misinformation is often missed or left up on the platform in error [6].
-
-Facebook themselves admitted a 10% error rate, equating to 300,000 daily posts left up [6]. 
-
-We are left to question, is enough being done?
+If you use social media, you'll probably have come across misinformation or fake news, whether you knew it or not. Not everyone can spot every piece of fake news, so many people unfortunately believe it, or even help spread it like wild fire.
+Misinformation and fake news during the COVID-19 pandemic has harmed or even killed numerous people.
+This has prompted social media companies such as Facebook and Twitter to try to flag or remove misinformation on their sites. In March and April 2020, Facebook placed warning labels on 90 million pieces of COVID-19 content alone [1].
+But social media is too large and fast-moving for them to spot every false claim. Facebook and Twitter contract third party companies to check facts, but the workload is excessive even for them. This had led some fact-checking companies such as snopes.com to even quit working with Facebook in 2019 [2].
+Fact checkers struggle to sort fact from fiction - it can feel like finding a needle in a haystack of information. Fact checkers are often overwhelmed and this leads to mistakes, where misinformation is not spotted and removed [3]. Facebook themselves admitted a 10% error rate, equating to 300,000 daily posts left up [3].
+So what if we could help fact checkers spot misinformation on social media easily?
 
 [1] https://www.bbc.co.uk/news/technology-52903680
 
-[2] https://www.independent.co.uk/news/world/middle-east/coronavirus-iran-deaths-toxic-methanol-alcohol-fake-news-rumours-a9487801.html
+[2] https://www.telegraph.co.uk/technology/2019/02/02/snopes-quits-facebooks-fact-checking-programme-saying-has-become/
 
-[3] https://twitter.com/realDonaldTrump/status/1241367239900778501?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1241367239900778501&ref_url=https%3A%2F%2Fwww.bbc.co.
-uk%2Fnews%2Fstories-52731624
-
-[4] https://www.bbc.co.uk/news/stories-52731624
-
-[5] https://www.independent.co.uk/news/uk/home-news/fake-news-facebook-twitter-share-misinformation-survey-a8908361.html
-
-[6] https://www.technologyreview.com/2020/06/08/1002894/facebook-needs-30000-of-its-own-content-moderators-says-a-new-report/
-
-[7] https://www.telegraph.co.uk/technology/2019/02/02/snopes-quits-facebooks-fact-checking-programme-saying-has-become/
-
+[3] https://www.technologyreview.com/2020/06/08/1002894/facebook-needs-30000-of-its-own-content-moderators-says-a-new-report/
 
 ### Solution
-We wanted to provide a way for the user to get instant feedback regarding information in a post or article they are reading, and we wanted to do this in a way that was seamless to their experience. We came up with the idea of using a Chrome extension to highlight a webpage as the user is reading it so that they instantly know whether they should trust or research the message further.
+Our browser extension identifies posts on social media that are likely to be false, and highlights it seamlessly on the page. This helps fact checkers spot claims that are likely to be false, enabling them to review and remove much more misinformation than they can at the moment.
 
-Our process is as follows:
+Here's how our extension works:
 1. When a user is browsing social media, The Hitchhiker's Guide uses IBM Watson's Natural Language processing and sentiment analysis to extract the central "Claim" from the post.
 1. Next we convert the "Claim" into a searchable query and then use the Microsoft Bing search API to find articles with a range of opinions on the topic.
 1. Then IBM Watson is again utilised to decide whether the articles returned from the Bing search agree or disagree with the "Claim" and provides a percentage summary to indicate the general consensus.
-1. Once the data is received by the Chrome extension the social media post is highlighted to give the user instant feedback. 
+1. Once the data is received by the Chrome extension the social media post is highlighted to give the user instant feedback. 
 
-The Hitchhiker's Guide helps fact-checkers by removing a lot of the menial tasks such as conducting the search and finding the articles. It also provides a snapshot of the current public opinion on the given statement.
-
-Additionally, our solution can be used for more than helping to identify and review misinformation 
-regarding COVID-19, it can be used in all other opinion rich areas such as climate change and politics. 
+The Hitchhiker's Guide automates steps for fact-checkers, such as helping them find useful sources. It also provides summarises the current public opinion on the given claim.
+Our solution can be used to spot misinformation regarding COVID-19, but it can also be extended to identify misinformation about other important areas such as climate change and politics.
 
 
 ## Demo video
