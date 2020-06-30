@@ -55,8 +55,7 @@ TODO: Write long description
 [More detail is available here](DESCRIPTION.md)
 
 ## Project roadmap
-TODO: Make roadmap
-![Roadmap](roadmap.jpg)
+![Roadmap](./images/Project_roadmap.png)
 
 ## Getting started
 
